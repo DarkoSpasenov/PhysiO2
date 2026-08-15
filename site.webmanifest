@@ -1,0 +1,14 @@
+{
+  "name": "Cabinet PhysiO2 — Kyriakos Petropoulakos",
+  "short_name": "PhysiO2",
+  "description": "Physiothérapeute à Belfaux (FR) — Cabinet PhysiO2",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAFBFB",
+  "theme_color": "#0B2239",
+  "lang": "fr-CH",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}
