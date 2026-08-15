@@ -8,36 +8,31 @@
 <meta name="description" content="Kyriakos Petropoulakos, physiothérapeute au Cabinet PhysiO2 à Belfaux (Fribourg) : thérapie manuelle, dry needling, physiothérapie neurologique et sportive, drainage lymphatique. Nouveaux patients acceptés — rendez-vous en ligne.">
 <link rel="canonical" href="https://VOTRE-DOMAINE.ch/">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<meta name="theme-color" content="#0B2239">
+<meta name="theme-color" content="#55663F">
 <script>document.documentElement.classList.add('js');</script>
 
-<!-- Open Graph / Twitter -->
+<!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr_CH">
 <meta property="og:site_name" content="Cabinet PhysiO2 — Kyriakos Petropoulakos">
 <meta property="og:title" content="Physiothérapeute à Belfaux | Kyriakos Petropoulakos — Cabinet PhysiO2">
 <meta property="og:description" content="Physiothérapie, thérapie manuelle, drainage lymphatique et cryothérapie compressive au Cabinet PhysiO2, Route de Lossy 18A, 1782 Belfaux.">
 <meta property="og:url" content="https://VOTRE-DOMAINE.ch/">
-<meta property="og:image" content="https://VOTRE-DOMAINE.ch/assets/img/cabinet-salle-traitement-1400.webp">
-<meta property="og:image:alt" content="Salle de traitement du Cabinet PhysiO2 à Belfaux">
+<meta property="og:image" content="https://VOTRE-DOMAINE.ch/assets/img/cabinet-espace-exercices-1400.webp">
+<meta property="og:image:alt" content="Espace d'exercices du Cabinet PhysiO2 à Belfaux">
 <meta name="twitter:card" content="summary_large_image">
 
-<!-- Favicon -->
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="manifest" href="site.webmanifest">
 
-<!-- Polices -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap" media="print" onload="this.media='all'">
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap"></noscript>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Playfair+Display:ital,wght@0,700;1,400;1,700&display=swap">
 
 <link rel="stylesheet" href="assets/css/styles.css">
-<link rel="preload" as="image" href="assets/img/cabinet-salle-traitement-800.webp" imagesrcset="assets/img/cabinet-salle-traitement-800.webp 800w, assets/img/cabinet-salle-traitement-1400.webp 1400w" imagesizes="(max-width: 1040px) 90vw, 45vw">
+<link rel="preload" as="image" href="assets/img/cabinet-espace-exercices-1400.webp" imagesrcset="assets/img/cabinet-espace-exercices-800.webp 800w, assets/img/cabinet-espace-exercices-1400.webp 1400w" imagesizes="100vw">
 
-<!-- Données structurées -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -108,25 +103,29 @@
 <header class="site-header">
   <div class="wrap header-inner">
     <a class="brand" href="index.html" aria-label="Cabinet PhysiO2 — accueil">
-      <span class="brand-mark" aria-hidden="true">P2</span>
+      <svg class="brand-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+        <circle cx="20" cy="20" r="19" stroke="currentColor" stroke-width="1.2" opacity=".55"/>
+        <path d="M13 25c4-1 6-3.5 7-6.5S22.5 12 27 11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+        <circle cx="26.5" cy="14.5" r="2.6" fill="currentColor"/>
+      </svg>
       <span>
-        <span class="brand-name">Kyriakos Petropoulakos</span>
-        <span class="brand-sub">Physiothérapie • Belfaux</span>
+        <span class="brand-name">PhysiO2</span>
+        <span class="brand-sub">Kyriakos Petropoulakos • Belfaux</span>
       </span>
     </a>
 
     <nav class="nav" id="main-nav" aria-label="Navigation principale">
-      <a href="#accueil">Accueil</a>
-      <a href="#expertises">Expertises</a>
+      <a href="#soins">Soins</a>
       <a href="#prestations">Prestations</a>
+      <a href="#expertises">Expertises</a>
       <a href="#a-propos">À propos</a>
       <a href="#cabinet">Cabinet</a>
       <a href="#contact">Contact</a>
-      <button type="button" class="btn btn--primary" data-rdv>Prendre rendez-vous</button>
+      <button type="button" class="btn btn--light" data-rdv>Prendre rendez-vous</button>
     </nav>
 
     <div class="header-actions">
-      <button type="button" class="btn btn--primary btn--sm" data-rdv>Prendre rendez-vous</button>
+      <button type="button" class="btn btn--light btn--sm" data-rdv>Prendre rendez-vous</button>
       <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir le menu">
         <span></span>
       </button>
@@ -138,194 +137,179 @@
 
   <!-- ===================== HERO ===================== -->
   <section class="hero" id="accueil">
-    <div class="wrap hero-grid">
-      <div>
-        <p class="badge"><span class="dot" aria-hidden="true"></span> Physiothérapeute à Belfaux</p>
+    <div class="hero-bg">
+      <img src="assets/img/cabinet-espace-exercices-1400.webp"
+           srcset="assets/img/cabinet-espace-exercices-800.webp 800w, assets/img/cabinet-espace-exercices-1400.webp 1400w"
+           sizes="100vw" width="1400" height="788" fetchpriority="high" decoding="async"
+           alt="Espace d'exercices du Cabinet PhysiO2 à Belfaux : espalier, ballons et sangles de suspension">
+    </div>
 
-        <h1>Retrouver votre mobilité.<span class="thin">Améliorer durablement votre qualité de vie.</span></h1>
-
-        <p class="hero-sub">Une approche moderne et personnalisée de la physiothérapie, fondée sur l'évaluation clinique, les connaissances scientifiques actuelles et les besoins spécifiques de chaque patient.</p>
-
-        <ul class="trust">
-          <li>
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
-            Nouveaux patients acceptés
-          </li>
-          <li>
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-            Cabinet PhysiO2 à Belfaux
-          </li>
-          <li>
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v4M12 17v4M3 12h4M17 12h4"/><circle cx="12" cy="12" r="3.2"/></svg>
-            Approche personnalisée
-          </li>
-        </ul>
-
-        <div class="hero-cta">
-          <button type="button" class="btn btn--primary" data-rdv>Prendre rendez-vous</button>
-          <a class="btn btn--ghost" href="#prestations">Découvrir les prestations</a>
-        </div>
+    <div class="wrap hero-inner">
+      <p class="kicker">Physiothérapie à Belfaux</p>
+      <h1>Retrouver<span class="title-2">votre mobilité.</span></h1>
+      <p>Une approche moderne et personnalisée de la physiothérapie, fondée sur l'évaluation clinique, les connaissances scientifiques actuelles et les besoins spécifiques de chaque patient.</p>
+      <div class="hero-cta">
+        <button type="button" class="btn btn--light" data-rdv>Prendre rendez-vous</button>
+        <a class="btn btn--outline-light" href="#soins">Découvrir les soins</a>
       </div>
+    </div>
 
-      <div class="hero-media">
-        <!-- Photo réelle du cabinet. Remplaçable : /assets/img/cabinet-salle-traitement-*.webp -->
-        <img src="assets/img/cabinet-salle-traitement-800.webp"
-             srcset="assets/img/cabinet-salle-traitement-800.webp 800w, assets/img/cabinet-salle-traitement-1400.webp 1400w"
-             sizes="(max-width: 1040px) 90vw, 45vw"
-             width="1400" height="788" fetchpriority="high" decoding="async"
-             alt="Salle de traitement du Cabinet PhysiO2 à Belfaux, avec table de physiothérapie réglable">
-        <div class="hero-card">
-          <p class="k">Cabinet</p>
-          <p class="v">Route de Lossy 18A <span>1782 Belfaux</span></p>
-        </div>
+    <div class="hero-meta">
+      <div class="wrap">
+        <ul>
+          <li>Nouveaux patients acceptés</li>
+          <li>Route de Lossy 18A, 1782 Belfaux</li>
+          <li>Consultations en six langues</li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <!-- ===================== EXPERTISES ===================== -->
-  <section class="section section--tint" id="expertises">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <p class="eyebrow">Expertises</p>
-        <h2>Une prise en charge adaptée à vos besoins</h2>
-        <p class="lead">Les domaines dans lesquels le cabinet intervient au quotidien, du trouble musculo-squelettique à la neuroréhabilitation.</p>
+  <!-- ===================== INTRO ===================== -->
+  <section class="band">
+    <div class="wrap band-split">
+      <h2 class="reveal">Vous êtes<span class="title-2">au bon endroit.</span></h2>
+      <div class="reveal">
+        <p class="lead">Cabinet PhysiO2, Route de Lossy 18A à Belfaux, à quelques minutes de Fribourg. Une prise en charge individuelle en physiothérapie, complétée par le massage thérapeutique, le drainage lymphatique et la cryothérapie compressive.</p>
+        <p style="margin-top:1.5rem">
+          <button type="button" class="btn btn--outline-light" data-rdv>Voir les disponibilités</button>
+        </p>
       </div>
+    </div>
+  </section>
 
-      <div class="cards reveal">
-        <article class="card">
-          <p class="card-num">01</p>
-          <h3>Thérapie manuelle</h3>
-          <p>Techniques manuelles appliquées aux problématiques musculo-squelettiques et fonctionnelles, choisies après évaluation.</p>
+  <!-- ===================== TRIO SOINS ===================== -->
+  <section class="section section--white" id="soins">
+    <div class="wrap">
+      <div class="trio">
+
+        <article class="trio-item reveal">
+          <img src="assets/img/cabinet-salle-traitement-800.webp"
+               srcset="assets/img/cabinet-salle-traitement-800.webp 800w, assets/img/cabinet-salle-traitement-1400.webp 1400w"
+               sizes="(max-width: 1024px) 90vw, 30vw" width="800" height="450" loading="lazy" decoding="async"
+               alt="Salle de traitement individuelle du cabinet, avec table de physiothérapie réglable">
+          <h3>physio</h3>
+          <p>Évaluation clinique puis traitement individualisé : thérapie manuelle, exercices thérapeutiques, rééducation fonctionnelle, neurologique ou après blessure.</p>
+          <a class="btn btn--outline" href="#prestations">Découvrir</a>
         </article>
-        <article class="card">
-          <p class="card-num">02</p>
-          <h3>Dry Needling</h3>
-          <p>Technique utilisée dans certaines prises en charge musculaires et myofasciales, lorsque son indication est pertinente.</p>
+
+        <article class="trio-item reveal">
+          <img src="assets/img/cabinet-materiel-800.webp"
+               srcset="assets/img/cabinet-materiel-800.webp 800w, assets/img/cabinet-materiel-1400.webp 1400w"
+               sizes="(max-width: 1024px) 90vw, 30vw" width="800" height="450" loading="lazy" decoding="async"
+               alt="Matériel thérapeutique du cabinet : ballons, haltères, tapis et ouvrages d'anatomie">
+          <h3>massage</h3>
+          <p>Massage thérapeutique classique et drainage lymphatique manuel, en séance de 30, 45 ou 60 minutes, seuls ou en complément d'un suivi.</p>
+          <a class="btn btn--outline" href="#tarifs">Découvrir</a>
         </article>
-        <article class="card">
-          <p class="card-num">03</p>
-          <h3>Trigger point thérapie</h3>
-          <p>Travail ciblé sur les points de tension musculaire, intégré à un traitement plus large lorsque la situation le justifie.</p>
+
+        <article class="trio-item reveal">
+          <img src="assets/img/cabinet-espace-cardio-800.webp"
+               srcset="assets/img/cabinet-espace-cardio-800.webp 800w, assets/img/cabinet-espace-cardio-1400.webp 1400w"
+               sizes="(max-width: 1024px) 90vw, 30vw" width="800" height="450" loading="lazy" decoding="async"
+               alt="Équipements de rééducation active du cabinet : vélo, appareil de résistance et trampoline">
+          <h3>cryo</h3>
+          <p>Cryothérapie compressive Game Ready : froid contrôlé et compression intermittente, utilisés dans certains protocoles de récupération.</p>
+          <a class="btn btn--outline" href="#tarifs">Découvrir</a>
         </article>
-        <article class="card">
-          <p class="card-num">04</p>
-          <h3>Physiothérapie neurologique</h3>
-          <p>Approche adaptée aux problématiques neurologiques et à la neuroréhabilitation, avec des objectifs fonctionnels définis ensemble.</p>
-        </article>
-        <article class="card">
-          <p class="card-num">05</p>
-          <h3>Déchirure musculaire et ligamentaire</h3>
-          <p>Accompagnement progressif après lésion musculaire ou ligamentaire, jusqu'à la reprise des activités.</p>
-        </article>
-        <article class="card">
-          <p class="card-num">06</p>
-          <h3>Troubles de l'ATM et de la mastication</h3>
-          <p>Prise en charge des troubles de l'articulation temporo-mandibulaire et des difficultés liées à la mastication.</p>
-        </article>
-        <article class="card">
-          <p class="card-num">07</p>
-          <h3>Scoliose</h3>
-          <p>Suivi individualisé intégrant exercices spécifiques et travail postural selon la situation du patient.</p>
-        </article>
-        <article class="card">
-          <p class="card-num">08</p>
-          <h3>Physiothérapie à domicile</h3>
-          <p>Prise en charge au domicile du patient lorsque la situation le nécessite, selon les disponibilités du cabinet.</p>
-        </article>
+
       </div>
     </div>
   </section>
 
   <!-- ===================== PRESTATIONS ===================== -->
-  <section class="section" id="prestations">
+  <section class="section section--cream2" id="prestations">
     <div class="wrap">
-      <div class="section-head reveal">
-        <p class="eyebrow">Prestations</p>
-        <h2>Physiothérapie</h2>
-        <p class="lead">Les motifs de consultation proposés au cabinet. La première séance débute par une évaluation complète permettant de définir ensemble un plan de traitement.</p>
+      <div class="band-split" style="margin-bottom: clamp(2rem, 4vw, 3rem)">
+        <div class="reveal">
+          <p class="eyebrow">Prestations</p>
+          <h2>Consultations<span class="title-2">en physiothérapie.</span></h2>
+        </div>
+        <p class="lead reveal">La première séance débute par une évaluation complète, qui permet de définir ensemble les objectifs et le plan de traitement. Les séances suivantes sont ajustées au fil de la prise en charge.</p>
       </div>
 
       <ul class="svc-list reveal">
-        <li class="svc">
-          <span class="svc-name">Première consultation et évaluation en physiothérapie</span>
-          <span class="svc-meta">45 min · adulte</span>
-        </li>
-        <li class="svc">
-          <span class="svc-name">Séance de suivi en physiothérapie musculo-squelettique</span>
-          <span class="svc-meta">30 min · adulte</span>
-        </li>
-        <li class="svc">
-          <span class="svc-name">Physiothérapie sportive et rééducation fonctionnelle</span>
-          <span class="svc-meta">30 min · adulte</span>
-        </li>
-        <li class="svc">
-          <span class="svc-name">Rééducation neurologique et cardiorespiratoire</span>
-          <span class="svc-meta">30 min · adulte</span>
-        </li>
-        <li class="svc">
-          <span class="svc-name">Clinical Pilates et exercices thérapeutiques</span>
-          <span class="svc-meta">30 min · adulte</span>
-        </li>
-        <li class="svc">
-          <span class="svc-name">Prise en charge de la douleur chronique</span>
-          <span class="svc-meta">30 min · adulte</span>
-        </li>
-        <li class="svc">
-          <span class="svc-name">Physiothérapie à domicile</span>
-          <span class="svc-meta">30 min</span>
-        </li>
+        <li class="svc"><span class="svc-name">Première consultation et évaluation en physiothérapie</span><span class="svc-meta">45 min · adulte</span></li>
+        <li class="svc"><span class="svc-name">Séance de suivi en physiothérapie musculo-squelettique</span><span class="svc-meta">30 min · adulte</span></li>
+        <li class="svc"><span class="svc-name">Physiothérapie sportive et rééducation fonctionnelle</span><span class="svc-meta">30 min · adulte</span></li>
+        <li class="svc"><span class="svc-name">Rééducation neurologique et cardiorespiratoire</span><span class="svc-meta">30 min · adulte</span></li>
+        <li class="svc"><span class="svc-name">Clinical Pilates et exercices thérapeutiques</span><span class="svc-meta">30 min · adulte</span></li>
+        <li class="svc"><span class="svc-name">Prise en charge de la douleur chronique</span><span class="svc-meta">30 min · adulte</span></li>
+        <li class="svc"><span class="svc-name">Physiothérapie à domicile</span><span class="svc-meta">30 min</span></li>
       </ul>
 
       <p class="note reveal">Les tarifs des séances de physiothérapie ne sont pas publiés sur cette page. Le cabinet vous renseigne directement lors de la prise de contact.</p>
 
-      <p style="margin-top:2rem" class="reveal">
-        <button type="button" class="btn btn--primary" data-rdv>Voir les disponibilités</button>
+      <p style="margin-top: 2.2rem" class="reveal">
+        <button type="button" class="btn btn--solid" data-rdv>Voir les disponibilités</button>
       </p>
     </div>
   </section>
 
+  <!-- ===================== EXPERTISES ===================== -->
+  <section class="band" id="expertises">
+    <div class="wrap band-split">
+      <ul class="band-list reveal">
+        <li>Thérapie manuelle</li>
+        <li>Dry Needling</li>
+        <li>Trigger point thérapie</li>
+        <li>Physiothérapie neurologique</li>
+        <li>Déchirure musculaire et ligamentaire</li>
+        <li>Troubles de l'ATM et de la mastication</li>
+        <li>Scoliose</li>
+        <li>Physiothérapie à domicile</li>
+      </ul>
+      <div class="reveal">
+        <h2>Compétences<span class="title-2">et prises en charge.</span></h2>
+        <p class="lead">Du trouble musculo-squelettique à la neuroréhabilitation, chaque technique est choisie après évaluation, selon son indication et les objectifs définis avec le patient.</p>
+      </div>
+    </div>
+  </section>
+
   <!-- ===================== TARIFS ===================== -->
-  <section class="section section--mist" id="tarifs">
+  <section class="section section--white" id="tarifs">
     <div class="wrap">
-      <div class="section-head section-head--wide reveal">
-        <p class="eyebrow">Prestations tarifées</p>
-        <h2>Massage thérapeutique, drainage lymphatique et cryothérapie</h2>
-        <p class="lead">Ces prestations peuvent compléter un suivi en physiothérapie ou être réservées séparément. Chaque séance est adaptée à la situation de la personne.</p>
+      <div class="band-split" style="margin-bottom: clamp(2.5rem, 5vw, 3.5rem)">
+        <div class="reveal">
+          <p class="eyebrow">Tarifs</p>
+          <h2>Massage, drainage<span class="title-2">et cryothérapie.</span></h2>
+        </div>
+        <p class="lead reveal">Ces prestations peuvent compléter un suivi en physiothérapie ou être réservées séparément. La durée est choisie selon la situation et les zones à traiter.</p>
       </div>
 
       <div class="price-grid reveal">
 
         <article class="price-card">
           <h3>Massage thérapeutique classique</h3>
-          <p>Travail manuel sur les tensions musculaires, la mobilité et le confort au quotidien. La durée est choisie selon l'étendue des zones à traiter.</p>
+          <p>Travail manuel sur les tensions musculaires, la mobilité et le confort au quotidien.</p>
           <div class="price-rows">
-            <div class="price-row"><span>30 min — séance ciblée sur une région</span><span class="amount">70 CHF</span></div>
-            <div class="price-row"><span>45 min — plusieurs régions ou tensions persistantes</span><span class="amount">100 CHF</span></div>
+            <div class="price-row"><span>30 min — une région ciblée</span><span class="amount">70 CHF</span></div>
+            <div class="price-row"><span>45 min — plusieurs régions</span><span class="amount">100 CHF</span></div>
             <div class="price-row"><span>60 min — prise en charge complète</span><span class="amount">130 CHF</span></div>
           </div>
-          <button type="button" class="btn btn--ghost" data-rdv>Réserver une séance</button>
+          <button type="button" class="btn btn--outline" data-rdv>Réserver</button>
         </article>
 
         <article class="price-card">
           <h3>Drainage lymphatique manuel</h3>
-          <p>Technique manuelle douce destinée notamment à soutenir la circulation lymphatique. Elle est utilisée selon l'indication, par exemple en cas de gonflements, de sensation de jambes lourdes ou dans un contexte de récupération.</p>
+          <p>Technique manuelle douce destinée notamment à soutenir la circulation lymphatique, utilisée selon l'indication.</p>
           <div class="price-rows">
             <div class="price-row"><span>30 min</span><span class="amount">80 CHF</span></div>
             <div class="price-row"><span>45 min</span><span class="amount">115 CHF</span></div>
             <div class="price-row"><span>60 min</span><span class="amount">150 CHF</span></div>
           </div>
-          <button type="button" class="btn btn--ghost" data-rdv>Prendre rendez-vous</button>
+          <button type="button" class="btn btn--outline" data-rdv>Réserver</button>
         </article>
 
         <article class="price-card">
-          <h3>Cryothérapie compressive — Game Ready</h3>
-          <p>Association d'un froid contrôlé et d'une compression intermittente, utilisée dans certains protocoles de récupération après une blessure, une intervention chirurgicale ou un effort sportif.</p>
+          <h3>Cryothérapie compressive Game Ready</h3>
+          <p>Froid contrôlé et compression intermittente, dans certains protocoles de récupération après blessure, intervention ou effort sportif.</p>
           <div class="price-rows">
             <div class="price-row"><span>20 min</span><span class="amount">50 CHF</span></div>
             <div class="price-row"><span>30 min</span><span class="amount">70 CHF</span></div>
             <div class="price-row"><span>45 min</span><span class="amount">90 CHF</span></div>
           </div>
-          <button type="button" class="btn btn--ghost" data-rdv>Réserver une séance</button>
+          <button type="button" class="btn btn--outline" data-rdv>Réserver</button>
         </article>
 
       </div>
@@ -333,28 +317,31 @@
   </section>
 
   <!-- ===================== À PROPOS ===================== -->
-  <section class="section section--tint" id="a-propos">
+  <section class="section" id="a-propos">
     <div class="wrap">
-      <div class="section-head reveal">
-        <p class="eyebrow">À propos</p>
-        <h2>Une approche clinique moderne et personnalisée</h2>
-        <p class="lead">Kyriakos Petropoulakos est physiothérapeute, avec une expérience clinique et académique internationale dans les domaines musculo-squelettique, neurologique, cardiorespiratoire et de la douleur chronique.</p>
+      <div class="band-split" style="margin-bottom: clamp(2.5rem, 5vw, 3.5rem)">
+        <div class="reveal">
+          <p class="eyebrow">À propos</p>
+          <h2>Une approche<span class="title-2">clinique et humaine.</span></h2>
+        </div>
+        <p class="lead reveal">Kyriakos Petropoulakos est physiothérapeute, avec une expérience clinique et académique internationale dans les domaines musculo-squelettique, neurologique, cardiorespiratoire et de la douleur chronique.</p>
       </div>
 
       <div class="about-grid">
-        <!-- Emplacement portrait : remplacer le contenu de .portrait-slot par
-             <img src="assets/img/portrait-kyriakos.webp" width="900" height="1125" alt="Kyriakos Petropoulakos, physiothérapeute au Cabinet PhysiO2 à Belfaux"> -->
+        <!-- Emplacement portrait : remplacer par
+             <img src="assets/img/portrait-kyriakos.webp" width="900" height="1125"
+                  alt="Kyriakos Petropoulakos, physiothérapeute au Cabinet PhysiO2 à Belfaux"> -->
         <div class="portrait-slot reveal">
           <p class="ph-text">
             <strong>Emplacement portrait</strong>
-            Ajoutez ici la photographie professionnelle de Kyriakos Petropoulakos (format portrait, 4:5).
+            Ajoutez ici la photographie professionnelle de Kyriakos Petropoulakos (format portrait 4:5).
           </p>
         </div>
 
-        <div class="about-blocks">
+        <div>
           <div class="about-block reveal">
             <h3>Formation</h3>
-            <p>Titulaire d'un Master en Physiothérapie Avancée de l'University of Thessaly, il poursuit actuellement un doctorat au Département de Physiothérapie de la même université. Ses travaux portent notamment sur la douleur chronique, les méthodes de distraction thérapeutique, la neuroréhabilitation et les nouvelles technologies appliquées à la rééducation.</p>
+            <p>Titulaire d'un Master en Physiothérapie Avancée de l'University of Thessaly, il poursuit un doctorat au Département de Physiothérapie de la même université. Ses travaux portent notamment sur la douleur chronique, les méthodes de distraction thérapeutique, la neuroréhabilitation et les nouvelles technologies appliquées à la rééducation.</p>
             <ul class="tags">
               <li class="tag">Orthopaedic Manual Therapy IFOMPT</li>
               <li class="tag">Acupuncture biomédicale et MTC</li>
@@ -370,7 +357,7 @@
 
           <div class="about-block reveal">
             <h3>Approche clinique</h3>
-            <p>Sa pratique s'appuie sur des méthodes fondées sur les preuves scientifiques (<em>evidence-based practice</em>), combinées à une prise en charge personnalisée centrée sur le patient. L'objectif du suivi est défini avec la personne, en tenant compte de sa situation, de ses contraintes et de ses activités.</p>
+            <p>Sa pratique s'appuie sur des méthodes fondées sur les preuves scientifiques (<em>evidence-based practice</em>), combinées à une prise en charge personnalisée centrée sur le patient. Les objectifs du suivi sont définis avec la personne, en tenant compte de sa situation, de ses contraintes et de ses activités.</p>
           </div>
 
           <div class="about-block reveal">
@@ -382,37 +369,37 @@
     </div>
   </section>
 
-  <!-- ===================== APPROCHE ===================== -->
-  <section class="section">
+  <!-- ===================== MÉTHODE + LANGUES ===================== -->
+  <section class="band">
     <div class="wrap">
-      <div class="section-head reveal">
-        <p class="eyebrow">Méthode</p>
-        <h2>Trois principes guident chaque suivi</h2>
-      </div>
+      <p class="eyebrow reveal">Méthode</p>
+      <h2 class="reveal" style="margin-bottom: clamp(2.5rem, 5vw, 3.5rem)">Trois principes<span class="title-2">guident chaque suivi.</span></h2>
 
       <div class="pillars reveal">
         <div class="pillar">
+          <p class="pillar-num">i.</p>
           <h3>Évaluation personnalisée</h3>
           <p>Comprendre précisément la situation, les limitations et les objectifs de la personne avant de définir un traitement.</p>
         </div>
         <div class="pillar">
-          <h3>Connaissances scientifiques actuelles</h3>
+          <p class="pillar-num">ii.</p>
+          <h3>Connaissances actuelles</h3>
           <p>Intégrer à la pratique clinique les méthodes actuelles et les données scientifiques pertinentes.</p>
         </div>
         <div class="pillar">
+          <p class="pillar-num">iii.</p>
           <h3>Patient au centre</h3>
-          <p>Construire une prise en charge adaptée aux besoins et aux objectifs individuels, ajustée au fil des séances.</p>
+          <p>Construire une prise en charge adaptée aux besoins individuels, ajustée au fil des séances.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===================== LANGUES ===================== -->
-  <section class="section section--tint" style="padding-block: clamp(3rem, 5vw, 4rem)">
-    <div class="wrap">
-      <div class="section-head reveal" style="margin-bottom: 1.75rem">
+  <section class="section section--tight section--cream2">
+    <div class="wrap band-split">
+      <div class="reveal">
         <p class="eyebrow">Langues</p>
-        <h2 style="font-size: clamp(1.4rem, 2.6vw, 1.9rem)">Consultations en plusieurs langues</h2>
+        <h2 style="font-size: clamp(1.6rem, 2.6vw, 2.2rem)">Consultations en six langues</h2>
       </div>
       <ul class="langs reveal">
         <li>Français</li>
@@ -426,107 +413,91 @@
   </section>
 
   <!-- ===================== CABINET ===================== -->
-  <section class="section" id="cabinet">
+  <section class="section section--white" id="cabinet">
     <div class="wrap">
-      <div class="section-head reveal">
-        <p class="eyebrow">Le cabinet</p>
-        <h2>Cabinet PhysiO2 à Belfaux</h2>
-        <p class="lead">Un espace de traitement individuel et une salle d'exercices équipée, à quelques minutes de Fribourg.</p>
+      <div class="band-split" style="margin-bottom: clamp(2.5rem, 5vw, 3.5rem)">
+        <div class="reveal">
+          <p class="eyebrow">Le cabinet</p>
+          <h2>Un espace<span class="title-2">pensé pour bouger.</span></h2>
+        </div>
+        <p class="lead reveal">Une salle de traitement individuelle et un espace d'exercices équipé, Route de Lossy 18A à Belfaux, avec des places de parc à proximité immédiate.</p>
       </div>
 
       <div class="gallery reveal">
         <figure>
           <img src="assets/img/cabinet-facade-800.webp" width="800" height="450" loading="lazy" decoding="async"
                alt="Façade du Cabinet PhysiO2, Route de Lossy 18A à Belfaux">
-          <figcaption>Entrée du cabinet, Route de Lossy 18A</figcaption>
+          <figcaption>Entrée du cabinet</figcaption>
         </figure>
         <figure>
-          <img src="assets/img/cabinet-espace-exercices-800.webp"
-               srcset="assets/img/cabinet-espace-exercices-800.webp 800w, assets/img/cabinet-espace-exercices-1400.webp 1400w"
-               sizes="(max-width: 860px) 90vw, 25vw"
-               width="800" height="450" loading="lazy" decoding="async"
-               alt="Espace d'exercices du cabinet avec espalier, ballons de gymnastique et sangles de suspension">
-          <figcaption>Espace d'exercices et de rééducation</figcaption>
+          <img src="assets/img/cabinet-espace-exercices-800.webp" width="800" height="450" loading="lazy" decoding="async"
+               alt="Espace d'exercices avec espalier, ballons de gymnastique et sangles de suspension">
+          <figcaption>Espace d'exercices</figcaption>
         </figure>
         <figure>
-          <img src="assets/img/cabinet-espace-cardio-800.webp"
-               srcset="assets/img/cabinet-espace-cardio-800.webp 800w, assets/img/cabinet-espace-cardio-1400.webp 1400w"
-               sizes="(max-width: 860px) 90vw, 25vw"
-               width="800" height="450" loading="lazy" decoding="async"
-               alt="Vélo d'appartement, appareil de résistance et trampoline de rééducation devant la vitrine du cabinet">
-          <figcaption>Équipements cardio et rééducation active</figcaption>
+          <img src="assets/img/cabinet-espace-cardio-800.webp" width="800" height="450" loading="lazy" decoding="async"
+               alt="Vélo d'appartement, appareil de résistance et trampoline de rééducation">
+          <figcaption>Rééducation active</figcaption>
         </figure>
         <figure>
-          <img src="assets/img/cabinet-materiel-800.webp"
-               srcset="assets/img/cabinet-materiel-800.webp 800w, assets/img/cabinet-materiel-1400.webp 1400w"
-               sizes="(max-width: 860px) 90vw, 25vw"
-               width="800" height="450" loading="lazy" decoding="async"
-               alt="Étagère du cabinet avec ballons, haltères, tapis et ouvrages d'anatomie">
-          <figcaption>Matériel thérapeutique et ouvrages de référence</figcaption>
+          <img src="assets/img/cabinet-salle-traitement-800.webp" width="800" height="450" loading="lazy" decoding="async"
+               alt="Salle de traitement individuelle avec table de physiothérapie réglable">
+          <figcaption>Salle de traitement</figcaption>
         </figure>
-      </div>
-
-      <div class="cabinet-grid" style="margin-top: clamp(2rem, 4vw, 3rem)">
-        <div>
-          <div class="info-card reveal">
-            <h3>Adresse et contact</h3>
-            <address class="addr">
-              <strong>Cabinet PhysiO2</strong>
-              Route de Lossy 18A<br>
-              1782 Belfaux, Suisse
-            </address>
-            <p style="margin-bottom:1.25rem">
-              Téléphone : <a href="tel:+41767836957"><strong>076 783 69 57</strong></a>
-            </p>
-            <div class="contact-links">
-              <button type="button" class="btn btn--primary btn--sm" data-rdv>Prendre rendez-vous</button>
-              <a class="btn btn--ghost btn--sm" href="https://www.google.com/maps/dir/?api=1&amp;destination=Route+de+Lossy+18A%2C+1782+Belfaux%2C+Suisse" target="_blank" rel="noopener">Itinéraire</a>
-              <a class="btn btn--ghost btn--sm" href="tel:+41767836957">Appeler</a>
-            </div>
-          </div>
-
-          <div class="info-card reveal" id="horaires">
-            <h3>Horaires d'ouverture</h3>
-            <table class="hours">
-              <caption class="sr-only">Horaires d'ouverture du Cabinet PhysiO2</caption>
-              <tbody>
-                <tr><th scope="row">Lundi</th><td><span>07:30 – 09:30</span><span>11:00 – 20:00</span></td></tr>
-                <tr><th scope="row">Mardi</th><td>07:30 – 17:30</td></tr>
-                <tr><th scope="row">Mercredi</th><td>09:00 – 20:00</td></tr>
-                <tr><th scope="row">Jeudi</th><td><span>07:30 – 09:30</span><span>11:00 – 20:00</span></td></tr>
-                <tr><th scope="row">Vendredi</th><td>07:30 – 17:30</td></tr>
-                <tr><th scope="row">Samedi</th><td class="closed">Fermé</td></tr>
-                <tr><th scope="row">Dimanche</th><td class="closed">Fermé</td></tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        <div class="map-frame reveal" data-map>
-          <iframe
-            data-src="https://www.google.com/maps?q=Route%20de%20Lossy%2018A%2C%201782%20Belfaux%2C%20Suisse&amp;hl=fr&amp;z=16&amp;output=embed"
-            title="Carte : Cabinet PhysiO2, Route de Lossy 18A, 1782 Belfaux"
-            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
       </div>
     </div>
   </section>
 
-  <!-- ===================== CTA FINALE ===================== -->
-  <section class="cta-band" id="contact">
+  <div class="map-full" data-map>
+    <iframe
+      data-src="https://www.google.com/maps?q=Route%20de%20Lossy%2018A%2C%201782%20Belfaux%2C%20Suisse&amp;hl=fr&amp;z=16&amp;output=embed"
+      title="Carte : Cabinet PhysiO2, Route de Lossy 18A, 1782 Belfaux"
+      loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <!-- ===================== CONTACT / HORAIRES ===================== -->
+  <section class="band" id="contact">
     <div class="wrap">
-      <p class="eyebrow">Rendez-vous</p>
-      <h2>Prenez soin de votre mobilité.</h2>
-      <p>Réservez votre prochaine consultation directement en ligne ou contactez le cabinet par WhatsApp.</p>
-      <div class="cta-actions">
-        <a class="btn btn--light" href="https://www.onedoc.ch/fr/physiotherapeute/belfaux/pc3uq/kyriakos-petropoulakos" target="_blank" rel="noopener">
-          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="17" rx="2.5"/><path d="M3 10h18M8 2.5v4M16 2.5v4"/></svg>
-          Réserver sur OneDoc
-        </a>
-        <a class="btn btn--outline-light" href="https://wa.me/41767836957?text=Bonjour%2C%20je%20souhaiterais%20prendre%20rendez-vous%20avec%20M.%20Petropoulakos.%20Pourriez-vous%20m%27indiquer%20les%20disponibilit%C3%A9s%20%3F%20Merci." target="_blank" rel="noopener">
-          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23a8.2 8.2 0 0 1 8.23 8.24c0 4.54-3.69 8.23-8.23 8.23Zm4.52-6.16c-.25-.13-1.47-.72-1.69-.8-.23-.09-.39-.13-.56.12-.16.25-.64.8-.79.97-.14.16-.29.19-.54.06-.25-.12-1.05-.38-1.99-1.23-.74-.65-1.23-1.46-1.38-1.71-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.44.13-.15.17-.25.25-.42.08-.16.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.84-.2-.48-.4-.42-.55-.43h-.47c-.16 0-.42.06-.64.31-.22.25-.84.82-.84 2.01s.86 2.33.98 2.49c.12.16 1.69 2.58 4.09 3.62.57.25 1.02.39 1.37.5.57.18 1.1.16 1.51.1.46-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29Z"/></svg>
-          Contacter sur WhatsApp
-        </a>
+      <div class="band-split" style="margin-bottom: clamp(2.5rem, 5vw, 3.5rem)">
+        <h2 class="reveal">Prenez soin<span class="title-2">de votre mobilité.</span></h2>
+        <div class="reveal">
+          <p class="lead">Réservez votre prochaine consultation en ligne sur OneDoc ou écrivez directement au cabinet sur WhatsApp.</p>
+          <div class="contact-links">
+            <a class="btn btn--light" href="https://www.onedoc.ch/fr/physiotherapeute/belfaux/pc3uq/kyriakos-petropoulakos" target="_blank" rel="noopener">Réserver sur OneDoc</a>
+            <a class="btn btn--outline-light" href="https://wa.me/41767836957?text=Bonjour%2C%20je%20souhaiterais%20prendre%20rendez-vous%20avec%20M.%20Petropoulakos.%20Pourriez-vous%20m%27indiquer%20les%20disponibilit%C3%A9s%20%3F%20Merci." target="_blank" rel="noopener">Contacter sur WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-grid">
+        <div class="reveal">
+          <p class="eyebrow">Adresse</p>
+          <address class="addr">
+            <strong>Cabinet PhysiO2</strong>
+            Route de Lossy 18A<br>
+            1782 Belfaux, Suisse
+          </address>
+          <p style="margin-top:1rem"><a href="tel:+41767836957">076 783 69 57</a></p>
+          <p style="margin-top:1.2rem">
+            <a class="btn btn--outline-light btn--sm" href="https://www.google.com/maps/dir/?api=1&amp;destination=Route+de+Lossy+18A%2C+1782+Belfaux%2C+Suisse" target="_blank" rel="noopener">Itinéraire</a>
+          </p>
+        </div>
+
+        <div class="reveal" id="horaires">
+          <p class="eyebrow">Horaires</p>
+          <table class="hours">
+            <caption class="sr-only">Horaires d'ouverture du Cabinet PhysiO2</caption>
+            <tbody>
+              <tr><th scope="row">Lundi</th><td><span>07:30 – 09:30</span><span>11:00 – 20:00</span></td></tr>
+              <tr><th scope="row">Mardi</th><td>07:30 – 17:30</td></tr>
+              <tr><th scope="row">Mercredi</th><td>09:00 – 20:00</td></tr>
+              <tr><th scope="row">Jeudi</th><td><span>07:30 – 09:30</span><span>11:00 – 20:00</span></td></tr>
+              <tr><th scope="row">Vendredi</th><td>07:30 – 17:30</td></tr>
+              <tr><th scope="row">Samedi</th><td class="closed">Fermé</td></tr>
+              <tr><th scope="row">Dimanche</th><td class="closed">Fermé</td></tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   </section>
@@ -539,12 +510,8 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <span class="fb-name">Kyriakos Petropoulakos</span>
-        <p>Physiothérapeute</p>
-        <p>
-          Cabinet PhysiO2<br>
-          Route de Lossy 18A<br>
-          1782 Belfaux
-        </p>
+        <p>Physiothérapeute — Cabinet PhysiO2</p>
+        <p>Route de Lossy 18A<br>1782 Belfaux</p>
         <p><a href="tel:+41767836957">076 783 69 57</a></p>
       </div>
 
@@ -552,19 +519,19 @@
         <h4>Navigation</h4>
         <ul>
           <li><a href="#accueil">Accueil</a></li>
-          <li><a href="#expertises">Expertises</a></li>
+          <li><a href="#soins">Soins</a></li>
           <li><a href="#prestations">Prestations</a></li>
+          <li><a href="#expertises">Expertises</a></li>
           <li><a href="#a-propos">À propos</a></li>
           <li><a href="#cabinet">Cabinet</a></li>
-          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
 
       <div>
         <h4>Rendez-vous</h4>
         <ul>
-          <li><a href="#" data-rdv>Prendre rendez-vous</a></li>
-          <li><a href="https://www.onedoc.ch/fr/physiotherapeute/belfaux/pc3uq/kyriakos-petropoulakos" target="_blank" rel="noopener">Réserver sur OneDoc</a></li>
+          <li><a href="#contact" data-rdv>Prendre rendez-vous</a></li>
+          <li><a href="https://www.onedoc.ch/fr/physiotherapeute/belfaux/pc3uq/kyriakos-petropoulakos" target="_blank" rel="noopener">OneDoc</a></li>
           <li><a href="https://wa.me/41767836957?text=Bonjour%2C%20je%20souhaiterais%20prendre%20rendez-vous%20avec%20M.%20Petropoulakos.%20Pourriez-vous%20m%27indiquer%20les%20disponibilit%C3%A9s%20%3F%20Merci." target="_blank" rel="noopener">WhatsApp</a></li>
           <li><a href="#horaires">Horaires</a></li>
           <li><a href="mentions-legales.html">Mentions légales</a></li>
@@ -584,7 +551,7 @@
 <div class="modal" id="rdv-modal" role="dialog" aria-modal="true" aria-labelledby="rdv-title" aria-hidden="true">
   <div class="modal-panel">
     <button type="button" class="modal-close" data-close-modal aria-label="Fermer la fenêtre">
-      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
     </button>
 
     <h2 id="rdv-title">Comment souhaitez-vous prendre rendez-vous&nbsp;?</h2>
@@ -592,23 +559,13 @@
 
     <div class="choice-grid">
       <div class="choice">
-        <div class="choice-top">
-          <span class="choice-icon" aria-hidden="true">
-            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="17" rx="2.5"/><path d="M3 10h18M8 2.5v4M16 2.5v4"/></svg>
-          </span>
-          <span class="choice-title">OneDoc<small>Réservation en ligne — disponibilités en temps réel</small></span>
-        </div>
+        <span class="choice-title">OneDoc<small>Réservation en ligne · disponibilités en temps réel</small></span>
         <p>Consultez les disponibilités et choisissez directement votre rendez-vous en ligne.</p>
-        <a class="btn btn--primary" href="https://www.onedoc.ch/fr/physiotherapeute/belfaux/pc3uq/kyriakos-petropoulakos" target="_blank" rel="noopener">Continuer sur OneDoc</a>
+        <a class="btn btn--solid" href="https://www.onedoc.ch/fr/physiotherapeute/belfaux/pc3uq/kyriakos-petropoulakos" target="_blank" rel="noopener">Continuer sur OneDoc</a>
       </div>
 
       <div class="choice choice--wa">
-        <div class="choice-top">
-          <span class="choice-icon" aria-hidden="true">
-            <svg width="21" height="21" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23a8.2 8.2 0 0 1 8.23 8.24c0 4.54-3.69 8.23-8.23 8.23Zm4.52-6.16c-.25-.13-1.47-.72-1.69-.8-.23-.09-.39-.13-.56.12-.16.25-.64.8-.79.97-.14.16-.29.19-.54.06-.25-.12-1.05-.38-1.99-1.23-.74-.65-1.23-1.46-1.38-1.71-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.44.13-.15.17-.25.25-.42.08-.16.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.84-.2-.48-.4-.42-.55-.43h-.47c-.16 0-.42.06-.64.31-.22.25-.84.82-.84 2.01s.86 2.33.98 2.49c.12.16 1.69 2.58 4.09 3.62.57.25 1.02.39 1.37.5.57.18 1.1.16 1.51.1.46-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29Z"/></svg>
-          </span>
-          <span class="choice-title">WhatsApp<small>Contact direct avec le cabinet</small></span>
-        </div>
+        <span class="choice-title">WhatsApp<small>Contact direct avec le cabinet</small></span>
         <p>Vous préférez nous écrire ? Contactez directement le cabinet sur WhatsApp.</p>
         <a class="btn" href="https://wa.me/41767836957?text=Bonjour%2C%20je%20souhaiterais%20prendre%20rendez-vous%20avec%20M.%20Petropoulakos.%20Pourriez-vous%20m%27indiquer%20les%20disponibilit%C3%A9s%20%3F%20Merci." target="_blank" rel="noopener">Ouvrir WhatsApp</a>
       </div>
@@ -621,9 +578,9 @@
 <!-- ===================== BARRE MOBILE ===================== -->
 <div class="mobile-bar">
   <a class="btn btn--icon" href="tel:+41767836957" aria-label="Appeler le cabinet au 076 783 69 57">
-    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.8a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.8 2.1Z"/></svg>
+    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.8a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.8 2.1Z"/></svg>
   </a>
-  <button type="button" class="btn btn--primary btn--block" data-rdv>Prendre rendez-vous</button>
+  <button type="button" class="btn btn--solid btn--block" data-rdv>Prendre rendez-vous</button>
 </div>
 
 <script src="assets/js/main.js" defer></script>

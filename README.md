@@ -3,6 +3,20 @@
 Site vitrine statique (HTML / CSS / JS, sans framework ni dépendance).
 Il suffit de déposer le contenu du dossier à la racine de l'hébergement.
 
+## Direction artistique
+
+Mise en page éditoriale : hero photo pleine largeur, bandes de couleur pleine largeur,
+grands titres en Playfair Display (seconde ligne en italique) et texte en Jost.
+Toutes les couleurs sont des variables CSS regroupées en haut de `assets/css/styles.css`.
+
+**Deux palettes livrées.** « Sauge » (verts naturels) est active par défaut.
+Une variante « pétrole », plus proche de l'enseigne bleue du cabinet, s'active en
+ajoutant un attribut sur la balise `<html>` de chaque page :
+
+```html
+<html lang="fr" data-theme="petrol">
+```
+
 ## Arborescence
 
 ```
