@@ -9,13 +9,18 @@ Mise en page éditoriale : hero photo pleine largeur, bandes de couleur pleine l
 grands titres en Playfair Display (seconde ligne en italique) et texte en Jost.
 Toutes les couleurs sont des variables CSS regroupées en haut de `assets/css/styles.css`.
 
-**Deux palettes livrées.** « Sauge » (verts naturels) est active par défaut.
-Une variante « pétrole », plus proche de l'enseigne bleue du cabinet, s'active en
-ajoutant un attribut sur la balise `<html>` de chaque page :
+**Deux palettes livrées.** « Bleu ardoise » est active par défaut : un bleu calme et
+légèrement grisé, choisi pour s'accorder au bleu soutenu de l'enseigne, du comptoir et
+du matériel du cabinet sans entrer en concurrence avec lui sur les photos.
+Une variante « sauge » (verts naturels) s'active en ajoutant un attribut sur la balise
+`<html>` de chaque page :
 
 ```html
-<html lang="fr" data-theme="petrol">
+<html lang="fr" data-theme="sage">
 ```
+
+Pour ajuster la teinte exacte, une seule variable suffit : `--olive` (bandes et boutons),
+complétée par `--deep` (titres et footer) et `--sage` (fin des dégradés).
 
 ## Arborescence
 

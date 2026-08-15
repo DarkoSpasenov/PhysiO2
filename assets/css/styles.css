@@ -11,19 +11,19 @@
 
 /* 1. TOKENS ---------------------------------------------------------------- */
 :root {
-  /* Palette « sauge » (par défaut) */
-  --deep:      #2F3A26;   /* vert très foncé — titres, footer */
-  --olive:     #55663F;   /* vert principal — bandes, boutons */
-  --olive-2:   #6E8055;
-  --sage:      #93A37B;   /* extrémité claire des dégradés */
-  --body-c:    #4B5540;   /* texte courant */
-  --muted:     #7C8570;
-  --cream:     #F6F4EC;   /* fond principal */
-  --cream-2:   #FBFAF5;
+  /* Palette « bleu ardoise » — calme, accordée au bleu du cabinet */
+  --deep:      #15303F;   /* bleu nuit — titres, footer */
+  --olive:     #2E5F7D;   /* bleu principal — bandes, boutons */
+  --olive-2:   #3D7799;
+  --sage:      #8DB3C6;   /* extrémité claire des dégradés */
+  --body-c:    #3B5666;   /* texte courant */
+  --muted:     #6F8B9B;
+  --cream:     #F2F5F7;   /* fond principal, blanc légèrement bleuté */
+  --cream-2:   #FAFCFD;
   --surface:   #FFFFFF;
-  --line:      rgba(47, 58, 38, .14);
-  --line-soft: rgba(47, 58, 38, .08);
-  --on-dark:   rgba(255, 255, 255, .82);
+  --line:      rgba(21, 48, 63, .14);
+  --line-soft: rgba(21, 48, 63, .08);
+  --on-dark:   rgba(255, 255, 255, .84);
 
   /* Typographie */
   --serif: "Playfair Display", Georgia, "Times New Roman", serif;
@@ -35,23 +35,23 @@
   --section-y: clamp(4.5rem, 9vw, 8rem);
 
   --r-pill: 999px;
-  --shadow: 0 20px 50px rgba(47, 58, 38, .12);
+  --shadow: 0 20px 50px rgba(21, 48, 63, .14);
   --ease: cubic-bezier(.22, .61, .36, 1);
 }
 
-/* Variante « pétrole » — harmonise avec l'enseigne bleue du cabinet.
-   Activation : <html lang="fr" data-theme="petrol"> */
-[data-theme="petrol"] {
-  --deep:      #16303B;
-  --olive:     #235265;
-  --olive-2:   #2E6980;
-  --sage:      #7BA3B3;
-  --body-c:    #33505C;
-  --muted:     #6E8894;
-  --cream:     #F3F5F5;
-  --cream-2:   #FAFBFB;
-  --line:      rgba(22, 48, 59, .14);
-  --line-soft: rgba(22, 48, 59, .08);
+/* Variante « sauge » — palette verte naturelle.
+   Activation : <html lang="fr" data-theme="sage"> */
+[data-theme="sage"] {
+  --deep:      #2F3A26;
+  --olive:     #55663F;
+  --olive-2:   #6E8055;
+  --sage:      #93A37B;
+  --body-c:    #4B5540;
+  --muted:     #7C8570;
+  --cream:     #F6F4EC;
+  --cream-2:   #FBFAF5;
+  --line:      rgba(47, 58, 38, .14);
+  --line-soft: rgba(47, 58, 38, .08);
 }
 
 /* 2. BASE ------------------------------------------------------------------ */
@@ -144,10 +144,10 @@ strong { font-weight: 500; color: var(--deep); }
 }
 .site-header::before {
   content: ""; position: absolute; inset: 0; pointer-events: none;
-  background: linear-gradient(180deg, rgba(30, 38, 24, .5), rgba(30, 38, 24, 0));
+  background: linear-gradient(180deg, rgba(12, 32, 43, .55), rgba(12, 32, 43, 0));
   transition: opacity .35s var(--ease);
 }
-.site-header.is-scrolled { background: var(--olive); box-shadow: 0 6px 30px rgba(47, 58, 38, .18); }
+.site-header.is-scrolled { background: var(--olive); box-shadow: 0 6px 30px rgba(21, 48, 63, .2); }
 .site-header.is-scrolled::before { opacity: 0; }
 
 .header-inner {
@@ -216,7 +216,7 @@ strong { font-weight: 500; color: var(--deep); }
 .btn--light { background: #fff; color: var(--deep); }
 .btn--light:hover { background: var(--cream); color: var(--deep); }
 
-.btn--outline { background: transparent; color: var(--deep); border-color: rgba(47, 58, 38, .3); }
+.btn--outline { background: transparent; color: var(--deep); border-color: rgba(21, 48, 63, .3); }
 .btn--outline:hover { background: var(--deep); color: #fff; border-color: var(--deep); }
 
 .btn--outline-light { background: transparent; color: #fff; border-color: rgba(255, 255, 255, .55); }
@@ -232,12 +232,12 @@ strong { font-weight: 500; color: var(--deep); }
   display: grid; align-items: center;
 }
 .hero-bg { position: absolute; inset: 0; z-index: -2; }
-.hero-bg img { width: 100%; height: 100%; object-fit: cover; filter: saturate(.42) contrast(1.03) brightness(.92); }
+.hero-bg img { width: 100%; height: 100%; object-fit: cover; filter: saturate(.85) contrast(1.02) brightness(.94); }
 .hero::after {
   content: ""; position: absolute; inset: 0; z-index: -1;
   background:
-    linear-gradient(96deg, rgba(38, 47, 30, .88) 0%, rgba(38, 47, 30, .72) 34%, rgba(38, 47, 30, .28) 72%, rgba(38, 47, 30, .42) 100%),
-    linear-gradient(180deg, rgba(30, 38, 24, .5) 0%, rgba(30, 38, 24, .12) 40%, rgba(30, 38, 24, .6) 100%);
+    linear-gradient(96deg, rgba(15, 38, 51, .9) 0%, rgba(15, 38, 51, .74) 34%, rgba(15, 38, 51, .3) 72%, rgba(15, 38, 51, .46) 100%),
+    linear-gradient(180deg, rgba(12, 32, 43, .52) 0%, rgba(12, 32, 43, .12) 40%, rgba(12, 32, 43, .62) 100%);
 }
 
 .hero-inner { padding-block: clamp(9rem, 16vw, 12rem) clamp(5rem, 9vw, 7rem); max-width: 44rem; }
@@ -259,7 +259,7 @@ strong { font-weight: 500; color: var(--deep); }
 .hero-meta {
   position: absolute; left: 0; right: 0; bottom: 0; z-index: 1;
   border-top: 1px solid rgba(255, 255, 255, .22);
-  background: rgba(32, 41, 26, .3);
+  background: rgba(12, 32, 43, .32);
   -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
 }
 .hero-meta ul {
@@ -295,7 +295,7 @@ strong { font-weight: 500; color: var(--deep); }
 
 /* 7. CARTES & LISTES ------------------------------------------------------- */
 .trio { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(1.75rem, 3.5vw, 3rem); }
-.trio-item img { width: 100%; aspect-ratio: 4 / 3.6; object-fit: cover; filter: saturate(.62) contrast(1.02); margin-bottom: 1.6rem; }
+.trio-item img { width: 100%; aspect-ratio: 4 / 3.6; object-fit: cover; filter: saturate(.88) contrast(1.02); margin-bottom: 1.6rem; }
 .trio-item h3 { font-size: clamp(1.9rem, 3vw, 2.4rem); margin-bottom: .35em; }
 .trio-item p { font-size: .99rem; font-weight: 300; margin-bottom: 1.5rem; }
 
@@ -357,7 +357,7 @@ strong { font-weight: 500; color: var(--deep); }
 
 .gallery { display: grid; grid-template-columns: repeat(4, 1fr); gap: clamp(.75rem, 1.5vw, 1.25rem); }
 .gallery figure { margin: 0; }
-.gallery img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; filter: saturate(.62) contrast(1.02); transition: transform .8s var(--ease); }
+.gallery img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; filter: saturate(.88) contrast(1.02); transition: transform .8s var(--ease); }
 .gallery figure:hover img { transform: scale(1.04); }
 .gallery figcaption { font-size: .82rem; color: var(--muted); font-weight: 300; padding-top: .7rem; }
 
@@ -397,7 +397,7 @@ strong { font-weight: 500; color: var(--deep); }
 /* 10. MODALE --------------------------------------------------------------- */
 .modal {
   position: fixed; inset: 0; z-index: 120; display: grid; place-items: center;
-  padding: 1.25rem; background: rgba(30, 38, 24, .62);
+  padding: 1.25rem; background: rgba(12, 32, 43, .64);
   -webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px);
   opacity: 0; visibility: hidden;
   transition: opacity .3s var(--ease), visibility .3s var(--ease);
@@ -430,8 +430,8 @@ strong { font-weight: 500; color: var(--deep); }
 }
 .choice p { font-size: .96rem; font-weight: 300; margin: .9rem 0 1.3rem; }
 .choice .btn { width: 100%; }
-.choice--wa .btn { background: #1F7A4D; color: #fff; }
-.choice--wa .btn:hover { background: #17603C; }
+.choice--wa .btn { background: #1E7D4C; color: #fff; }
+.choice--wa .btn:hover { background: #166139; }
 
 .modal-foot { margin-top: 1.8rem; padding-top: 1.2rem; border-top: 1px solid var(--line); font-size: .92rem; font-weight: 300; color: var(--muted); text-align: center; }
 .modal-foot a { color: var(--deep); }
@@ -444,7 +444,7 @@ strong { font-weight: 500; color: var(--deep); }
   transition: transform .4s var(--ease);
 }
 .mobile-bar.is-visible { transform: translate(-50%, 0); }
-.mobile-bar .btn { box-shadow: 0 14px 34px rgba(30, 38, 24, .3); }
+.mobile-bar .btn { box-shadow: 0 14px 34px rgba(21, 48, 63, .32); }
 .mobile-bar .btn--icon { width: 52px; flex: none; padding: 0; background: #fff; color: var(--deep); }
 
 /* 12. APPARITIONS ---------------------------------------------------------- */
